@@ -1,6 +1,3 @@
-class profile::nginx {
-   include ::nginx
-
-  ::nginx::vhost { $facts['fqdn']:
- }
+class role::nginx {
+  include ::profile::nginx
 }
